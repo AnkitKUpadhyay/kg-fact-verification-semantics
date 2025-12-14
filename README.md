@@ -108,10 +108,10 @@ networkx
 
 If you use this code or findings, please cite:
 ```bibtex
-@article{upadhyay2024evidence,
+@article{upadhyay2025evidence,
   title={Evidence Grounding vs. Memorization: Why Neural Semantics Matter for Knowledge Graph Fact Verification},
   author={Upadhyay, Ankit},
-  year={2024}
+  year={2025}
 }
 ```
 
