@@ -9,7 +9,7 @@ This repository contains the code and experiments for my research on knowledge g
 
 ## Paper
 
-See [`KG_Project_Paper_Dec_4.pdf`](KG_Project_Paper_Dec_4.pdf) for the complete research paper.
+See [`KG_Project_Paper_Dec_4.pdf`](KG_Project_Paper_Dec_4_final.pdf) for the complete research paper.
 
 ## Dataset
 
