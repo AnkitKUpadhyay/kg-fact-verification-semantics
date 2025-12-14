@@ -1,0 +1,73 @@
+str_replace .gitignore "**/data/
+**/__pycache__
+**/cache/
+**/.DS_Store
+results/
+models/
+notes.txt
+glocal_settings.py
+Makefile
+*.pdf" "# Data directories
+**/data/
+**/cache/
+results/
+models/
+features/
+logs/
+
+# Python artifacts
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+**/.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+.env.*
+*.env
+config.sh
+secrets/
+api_keys.txt
+*_key.txt
+*_token.txt
+
+# Large data files
+*.zip
+*.tar.gz
+*.pkl
+*.h5
+*.hdf5
+*.parquet
+
+# OS files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+notes.txt
+glocal_settings.py
+Makefile
+
+# Keep PDF paper but ignore others (optional - uncomment if needed)
+# *.pdf
+# !KG_Project_Paper_Dec_4.pdf"*.sh
+*.sh

@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "version": "1.1",
+    "created": "2025-11-11",
+    "total_examples": 5,
+    "examples_per_type": 1,
+    "reasoning_types": [
+      "negation",
+      "existence",
+      "multi_hop",
+      "multi_claim",
+      "substitution"
+    ],
+    "optimization": "Selected BEST example per type for GPT-OSS (avoids prompt overload)",
+    "rationale": "Experiments showed 10-shot=80.31%, 20-shot=79.37% (worse!). 5-shot expected to be optimal."
+  },
+  "examples": [
+    {
+      "id": "negation_1",
+      "reasoning_type": "negation",
+      "claim": "Abbas El Fassi was NOT a prime minister.",
+      "evidence": [
+        "[0] Abbas El Fassi --birthPlace--> Berkane",
+        "[1] Abbas El Fassi --office--> Prime Minister of Morocco",
+        "[2] Abbas El Fassi --activeYearsStartDate--> 2007-09-19",
+        "[3] Abbas El Fassi --predecessor--> Driss Jettou",
+        "[4] Driss Jettou --office--> Prime Minister of Morocco",
+        "[5] Abbas El Fassi --successor--> Driss Jettou"
+      ],
+      "reasoning": {
+        "verdict": "REFUTED",
+        "explanation": "The claim states Abbas El Fassi was NOT a prime minister. However, triple [1] explicitly shows he held the office of Prime Minister of Morocco, with [2] confirming his term started in 2007. This is a double negative case: the claim negates (NOT), but the evidence affirms (WAS). Therefore, the claim is REFUTED.",
+        "key_evidence": [
+          1,
+          2
+        ],
+        "confidence": "high",
+        "special_notes": {
+          "negation_handling": "yes - Double negative: claim says NOT, evidence says YES \u2192 REFUTED",
+          "anti_fallacy_check": "yes - Direct contradiction found in [1], no inference needed"
+        }
+      },
+      "teaching_point": "When claim uses negation (NOT) and evidence directly affirms the opposite, this is REFUTED. Don't assume absence of evidence means support for negation."
+    },
+    {
+      "id": "existence_1",
+      "reasoning_type": "existence",
+      "claim": "Albert Einstein received a Nobel Prize.",
+      "evidence": [
+        "[0] Albert Einstein --birthPlace--> Ulm",
+        "[1] Albert Einstein --award--> Nobel Prize in Physics",
+        "[2] Albert Einstein --awardYear--> 1921",
+        "[3] Albert Einstein --knownFor--> Theory of Relativity",
+        "[4] Nobel Prize in Physics --awardedBy--> Royal Swedish Academy of Sciences"
+      ],
+      "reasoning": {
+        "verdict": "SUPPORTED",
+        "explanation": "The claim asserts that Einstein received a Nobel Prize, which is an existence claim. Triple [1] directly confirms this by stating he received the Nobel Prize in Physics, with [2] providing the year (1921). The existence of this direct relation in the evidence base supports the claim. The additional context in [3] and [4] provides corroborating information but [1] alone is sufficient.",
+        "key_evidence": [
+          1,
+          2
+        ],
+        "confidence": "high",
+        "special_notes": {
+          "anti_fallacy_check": "yes - Direct evidence [1] confirms existence, no inference needed"
+        }
+      },
+      "teaching_point": "Existence claims require finding a direct relation in the evidence. If the specific relation exists (e.g., 'award'), the claim is SUPPORTED."
+    },
+    {
+      "id": "multi_hop_4",
+      "reasoning_type": "multi_hop",
+      "claim": "The director of Titanic won an Oscar for Best Director.",
+      "evidence": [
+        "[0] Titanic --director--> James Cameron",
+        "[1] James Cameron --award--> Academy Award for Best Director",
+        "[2] James Cameron --awardFor--> Titanic",
+        "[3] Titanic --releaseYear--> 1997",
+        "[4] Academy Award --awardedBy--> Academy of Motion Picture Arts and Sciences",
+        "[5] James Cameron --nationality--> Canadian"
+      ],
+      "reasoning": {
+        "verdict": "SUPPORTED",
+        "explanation": "Multi-hop verification needed: [0] identifies James Cameron as the director of Titanic. [1] shows he won the Academy Award for Best Director. [2] confirms this award was specifically for Titanic. Following [0]\u2192[1]\u2192[2], we verify that the director of Titanic (Cameron) did win Best Director (for that film). The claim is SUPPORTED through this connected chain.",
+        "key_evidence": [
+          0,
+          1,
+          2
+        ],
+        "confidence": "high",
+        "special_notes": {
+          "chain_reasoning": "yes - [0]\u2192[1]\u2192[2] forms complete verification chain",
+          "anti_fallacy_check": "yes - [2] confirms the award was specifically for Titanic, not another film"
+        }
+      },
+      "teaching_point": "When claims involve 'the X of Y did Z', verify the complete chain: identify X ([0]), confirm X did Z ([1]), and validate the connection ([2])."
+    },
+    {
+      "id": "multi_claim_2",
+      "reasoning_type": "multi_claim",
+      "claim": "The Mona Lisa was painted by Leonardo da Vinci and is currently in the British Museum.",
+      "evidence": [
+        "[0] Mona Lisa --creator--> Leonardo da Vinci",
+        "[1] Mona Lisa --medium--> Oil painting",
+        "[2] Mona Lisa --location--> Louvre Museum",
+        "[3] Louvre Museum --location--> Paris",
+        "[4] British Museum --location--> London",
+        "[5] Leonardo da Vinci --birthPlace--> Vinci"
+      ],
+      "reasoning": {
+        "verdict": "REFUTED",
+        "explanation": "This conjunctive claim requires both parts to be true. First claim: 'painted by da Vinci' is SUPPORTED by [0]. Second claim: 'currently in British Museum' is REFUTED by [2], which shows it's actually in the Louvre Museum, not the British Museum ([4] confirms British Museum is different, in London). Since the second part is false, the entire conjunction is REFUTED. In conjunctions, even one false component makes the whole claim false.",
+        "key_evidence": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "confidence": "high",
+        "special_notes": {
+          "conjunction_handling": "yes - First part TRUE [0], but second part FALSE [2] \u2192 Overall REFUTED",
+          "anti_fallacy_check": "yes - Did not overlook the location mismatch; AND requires both parts true"
+        }
+      },
+      "teaching_point": "In conjunctive claims (AND), if any part is false, the entire claim is REFUTED. Don't let one true part mislead you into SUPPORTED."
+    },
+    {
+      "id": "substitution_1",
+      "reasoning_type": "substitution",
+      "claim": "The capital of Germany is Munich.",
+      "evidence": [
+        "[0] Germany --capital--> Berlin",
+        "[1] Berlin --population--> 3,769,495",
+        "[2] Munich --locatedIn--> Germany",
+        "[3] Munich --population--> 1,484,226",
+        "[4] Bavaria --capital--> Munich",
+        "[5] Bavaria --locatedIn--> Germany"
+      ],
+      "reasoning": {
+        "verdict": "REFUTED",
+        "explanation": "This is a substitution claim where the wrong entity is asserted. The claim states Munich is Germany's capital. However, [0] explicitly shows Berlin is the capital of Germany, not Munich. Although [2] confirms Munich is in Germany and [4] shows it's the capital of Bavaria, this doesn't make it Germany's national capital. The claim substitutes Munich for the correct answer (Berlin). REFUTED.",
+        "key_evidence": [
+          0,
+          2,
+          4
+        ],
+        "confidence": "high",
+        "special_notes": {
+          "substitution_handling": "yes - Claim says Munich, evidence [0] says Berlin \u2192 wrong entity substituted",
+          "anti_fallacy_check": "yes - Recognized Munich is A capital [4] but not THE capital [0]"
+        }
+      },
+      "teaching_point": "In substitution claims, similar entities can be confused. Munich is A capital (of Bavaria), but Berlin is THE capital (of Germany). Check for this distinction."
+    }
+  ]
+}

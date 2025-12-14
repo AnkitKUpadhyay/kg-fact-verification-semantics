@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "description": "Gold-standard few-shot examples for fact verification with chain-of-thought",
+    "created": "2024-11-18",
+    "n_examples": 10,
+    "evidence_type": "unfiltered",
+    "annotation_source": "manual"
+  },
+  "examples": [
+    {
+      "claim": "Imre Páli did not even attend college!",
+      "verdict": "SUPPORTED",
+      "triples": [
+        ["Imre Páli", "birthDate", "1909-11-06"],
+        ["Imre Páli", "birthYear", "1909"]
+      ],
+      "explanation": "The claim asserts that Imre Páli did not attend college. Examining the evidence: we have birth date and birth year information, but critically, there are NO triples about education, almaMater, or university attendance. In knowledge graphs, if someone attended a notable educational institution, this would typically be documented alongside other biographical data. The complete absence of any education-related triples, while other biographical details are present, supports the claim that he did not attend college.",
+      "key_evidence": [0, 1],
+      "confidence": "high"
+    },
+    {
+      "claim": "When was Paolo Boselli prime minister?",
+      "verdict": "SUPPORTED",
+      "triples": [
+        ["Paolo Boselli", "~successor", "Antonio Salandra"],
+        ["Paolo Boselli", "birthDate", "1838-06-08"],
+        ["Paolo Boselli", "deathDate", "1932-03-10"],
+        ["Paolo Boselli", "activeYearsStartDate", "1916-06-18"],
+        ["Paolo Boselli", "activeYearsEndDate", "1917-10-29"],
+        ["Paolo Boselli", "birthYear", "1838"],
+        ["Paolo Boselli", "deathYear", "1932"],
+        ["Paolo Boselli", "birthPlace", "Italy"],
+        ["Paolo Boselli", "party", "Liberalism and radicalism in Italy"],
+        ["Paolo Boselli", "successor", "Vittorio Emanuele Orlando"],
+        ["Paolo Boselli", "monarch", "Victor Emmanuel III of Italy"],
+        ["Paolo Boselli", "order", "Prime Minister of Italy"],
+        ["Paolo Boselli", "title", "Prime Minister of Italy"],
+        ["Paolo Boselli", "years", "1916"]
+      ],
+      "explanation": "The question asks when Paolo Boselli was prime minister. Triples [11] and [12] confirm he held this position ('order → Prime Minister of Italy' and 'title → Prime Minister of Italy'). The key temporal evidence is [3] 'activeYearsStartDate → 1916-06-18' and [4] 'activeYearsEndDate → 1917-10-29', which directly answer when he served. His successor [9] and predecessor [0] provide additional confirmation.",
+      "key_evidence": [3, 4, 11, 12],
+      "confidence": "high"
+    },
+    {
+      "claim": "A politician born in Spain belongs to the Young Finnish Party!",
+      "verdict": "REFUTED",
+      "triples": [
+        ["Spain", "~birthPlace", "Antonio Colom"],
+        ["Spain", "~placeOfBirth", "Pura Lopez"],
+        ["Spain", "~birthDate", "José-Antonio Campos-Ortega"],
+        ["Spain", "~dateOfBirth", "Daniel Navarro"],
+        ["Spain", "~nationality", "Cristina Cifuentes"],
+        ["Spain", "capital", "Madrid"],
+        ["Spain", "demonym", "Spaniards"],
+        ["Young Finnish Party", "~party", "List of Prime Ministers of Finland"]
+      ],
+      "explanation": "Several people were born in Spain [0-3], and [7] shows the Young Finnish Party is connected to Finnish Prime Ministers. For the claim to be true, we'd need a triple connecting any Spanish-born individual to the Young Finnish Party. No such connection exists. The Young Finnish Party is Finnish (Northern Europe) while Spain is in Southern Europe - there's a geographic mismatch that makes this claim implausible.",
+      "key_evidence": [0, 1, 2, 3, 7],
+      "confidence": "high"
+    },
+    {
+      "claim": "planet has a rotation of 190720.0 hours and an orbit of 373513000.0km.",
+      "verdict": "REFUTED",
+      "triples": [
+        ["3.73513E8", "apoapsis", "1089 Tama"],
+        ["90720.0", "~weight", "Phil Mickelson"],
+        ["90720.0", "~rotationPeriod", "60 Echo"],
+        ["90720.0", "~mass", "Shavetail"]
+      ],
+      "explanation": "The claim states rotation of 190720.0 hours and orbit of 3.73513E8 km. [0] shows 3.73513E8 is the apoapsis of asteroid 1089 Tama, not an orbit. [2] shows 90720.0 is the rotation period of '60 Echo' - but the claim says 190720.0 (double the actual value). The rotation belongs to '60 Echo' and the orbit measurement belongs to '1089 Tama' - these are two different asteroids, not one planet.",
+      "key_evidence": [0, 2],
+      "confidence": "high"
+    },
+    {
+      "claim": "Loloda are an ethnic group where Angola is part of the state of Indiana?",
+      "verdict": "REFUTED",
+      "triples": [
+        ["Loloda", "~ethnicGroup", "Halmahera"],
+        ["Angola, Indiana", "country", "United States"],
+        ["Angola, Indiana", "type", "City"],
+        ["Indiana", "~isPartOf", "Angola, Indiana"],
+        ["Indiana", "country", "United States"],
+        ["Indiana", "fullname", "State of Indiana"]
+      ],
+      "explanation": "[0] shows Loloda are from Halmahera (Indonesia), not connected to Indiana or Angola. [3] 'Indiana ~isPartOf → Angola, Indiana' means Angola, Indiana IS PART OF Indiana (a city within the state), not the reverse. The claim has the relationship backwards and incorrectly associates an Indonesian ethnic group with US geography.",
+      "key_evidence": [0, 1, 3],
+      "confidence": "high"
+    },
+    {
+      "claim": "He is an American and was born in New Hampshire.",
+      "verdict": "SUPPORTED",
+      "triples": [
+        ["United States", "demonym", "American"],
+        ["United States", "~country", "New Hampshire"],
+        ["New Hampshire", "~birthPlace", "Nathan Clifford"],
+        ["New Hampshire", "~placeOfBirth", "Dan Eckman"],
+        ["New Hampshire", "fullname", "State of New Hampshire"]
+      ],
+      "explanation": "[1] establishes New Hampshire is in the United States. [0] defines that people from the US are American. [2] and [3] show people born in New Hampshire: Nathan Clifford and Dan Eckman. Since New Hampshire is part of the US, anyone born there is American. Both individuals satisfy both conditions.",
+      "key_evidence": [0, 1, 2, 3],
+      "confidence": "high"
+    },
+    {
+      "claim": "Paul Ryan is the leader of Montserrat where AmeriGas does not provide their services.",
+      "verdict": "REFUTED",
+      "triples": [
+        ["Paul Ryan", "office", "Chairman of the House Ways and Means Committee"],
+        ["Paul Ryan", "state", "Wisconsin"],
+        ["Paul Ryan", "profession", "Politician"],
+        ["Montserrat", "leader", "James Duddridge"],
+        ["Montserrat", "leaderName", "Elizabeth II"],
+        ["Montserrat", "status", "British Overseas Territories"],
+        ["AmeriGas", "country", "United States"],
+        ["AmeriGas", "locationCity", "King of Prussia, Pennsylvania"]
+      ],
+      "explanation": "[0] shows Paul Ryan's office is Chairman of a House Committee, and [1] shows his state is Wisconsin - he's a US politician. [3] and [4] show Montserrat's leaders are James Duddridge and Elizabeth II (it's a British territory). Paul Ryan has no connection to Montserrat leadership. While AmeriGas likely doesn't serve Montserrat [6-7], the first part of the claim is false.",
+      "key_evidence": [0, 1, 3, 4],
+      "confidence": "high"
+    },
+    {
+      "claim": "The location of Lord's Middle Ground is Tirstrup which is in Denmark where one of the languages spoken is Greenlandic.",
+      "verdict": "REFUTED",
+      "triples": [
+        ["Lord's Middle Ground", "location", "England"],
+        ["Tirstrup", "country", "Denmark"],
+        ["Tirstrup", "isPartOf", "Central Denmark Region"],
+        ["Greenlandic language", "spokenIn", "Greenland"],
+        ["Denmark", "officialLanguage", "Danish language"]
+      ],
+      "explanation": "[0] shows 'Lord's Middle Ground → location → England', not Tirstrup. [1] confirms Tirstrup is in Denmark. [3] shows Greenlandic is spoken in Greenland, and [4] shows Denmark's official language is Danish. The critical error is that Lord's Middle Ground is in England, not Tirstrup - this geographic substitution refutes the entire claim.",
+      "key_evidence": [0, 1],
+      "confidence": "high"
+    },
+    {
+      "claim": "No, David Diplacido did not attend a university.",
+      "verdict": "SUPPORTED",
+      "triples": [
+        ["David Diplacido", "birthDate", "1977-05-18"],
+        ["David Diplacido", "birthPlace", "Canada"],
+        ["David Diplacido", "position", "Midfielder"],
+        ["David Diplacido", "team", "York Region Shooters"],
+        ["David Diplacido", "clubs", "Montreal Impact"],
+        ["David Diplacido", "height", "172.72"]
+      ],
+      "explanation": "The evidence provides comprehensive biographical and career information including birth date [0], position [2], teams [3-4], but there are NO triples about education, almaMater, or university attendance. If Diplacido attended a notable university, it would typically be documented alongside his professional soccer career details. The complete absence of education-related triples supports the claim.",
+      "key_evidence": [0, 1, 2, 3, 4, 5],
+      "confidence": "high"
+    },
+    {
+      "claim": "Well, the Danish Gold Coast did not even have a capital.",
+      "verdict": "REFUTED",
+      "triples": [
+        ["Danish Gold Coast", "capital", "Osu, Accra"],
+        ["Danish Gold Coast", "foundingYear", "1658"],
+        ["Danish Gold Coast", "dissolutionYear", "1850"],
+        ["Danish Gold Coast", "status", "Denmark-Norway crown colony"],
+        ["Danish Gold Coast", "leader", "Frederick V of Denmark"]
+      ],
+      "explanation": "[0] directly states 'Danish Gold Coast → capital → Osu, Accra', explicitly contradicting the claim. Supporting context [1-4] shows it was a formal colony with founding/dissolution years and leadership structure, making it even more likely to have a capital. The direct evidence of a capital refutes the claim.",
+      "key_evidence": [0],
+      "confidence": "high"
+    }
+  ]
+}

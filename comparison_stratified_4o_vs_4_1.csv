@@ -1,0 +1,151 @@
+claim,label,num_filtered_A,num_filtered_B,approx_tokens_A,approx_tokens_B,jaccard,overlap_at_minK,delta_kept,delta_tokens,reasoning_type
+Big Hero 6 is a Disney Studios Motion Picture which stars Filip Nola and has Origin (Angel) as a character.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+I wasn’t aware that Bhajji does not come from the Karnataka region and its leader is not Vajubhai Vala.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+"Big Hero 6, a film distributed by Walt Disney Studios Motion Pictures, starred Jamie Chung and included the character Baymax.",1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+"A Severed Wasp has 388 pages, can be found in print and has the OCLC number 8805735.",1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+"Stuart Parker is a footballer with the Grand Rapids Hornets, also plays for Botswana Defence Force XI FC and has managed AFC Blackpool.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+"Alvah Sabin was born in Georgia, Vermont and belongs to the United States Whig party which is led by Basil Brooke, 1st Viscount Brookeborough.",0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+"Bhajji originates from India, where T. S. Thakur and Sumitra Mahajan are leaders.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+The Bakewell pudding comes from the Suva region in Derbyshire.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+Duncan Rouleau created Tsathoggua for Big Hero 6.,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+Well William Anders was born in British Hong Kong but is a United States national.,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+"Yes, Baymax was not created by Duncan Rouleau or Steven T. Seagle.",0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+"While the leader of India is Lopon Khenpo Sonam Tenphel, another leader is TS Thakur, and Amdavad ni Gufa is a location in India.",0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+"Pierre J. Thuot, who graduated with an M.S., from AFIT in 1962, served as a crew member on Apollo 8 alongside Frank Borman.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+"Agra airport is operated by the Indian Air Force, using HAL light combat helicopters and Bell 212HP.",0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+The College of William and Mary is the owner of the Georgian styled Alan B. Miller Hall in Coalgate.,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+"103 Colmore Row was originally designed by John Madin, not in Birmingham.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+The 11th Mississippi Infantry Monument is in Pennsylvania and falls under the category of Pop punk.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+"Born in Miri, in Malaysia, Abdul Taib Mahmud, resides in Sarawak and is a member of the ""MDB, PMDB, PRN, PTB, PFL, Democrats"" party.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+"Alfons Gorbach was born in the county of Tyrol, located in Austria.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+"I understand that the manager of A.F.C. Blackpool is Stuart Parker, who used to play for Bury FC and has represented the club KV Mechelen.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+"AFC Blackpool have had Stuart Parker as their manager, he was a footballer for Chesterfield FC. and Bury FC.",1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+A Wizard of Mars was written in hardback and has the ISBN number 978-0-15-204770-2.,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+"William Anders, born in British Hong Kong, was a fighter pilot a member of Apollo 8's crew.",1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+Agustin Barboza was born in Asuncion which is part of Gran Asunción.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+103 Colmore Row was built in 1976 and has 23 floors.,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+It is located in Birmingham. 1 William Street has 23 floors!,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi claim
+Alfredo Zitarrosa's birthplace was Uruguay where the leader is Tabaré Vázquez.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+"11th Mississippi Infantry Monument's location is Adams County, Pennsylvania and was established in 2000.",1,10,10,159.0,159.0,0.6666666666666666,0.8,0,0.0,multi claim
+"José Eduardo dos Santos was married to Lady Anne Monson, a botanist, who died on February 18, 1776.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+"The birth place of Ed Spurney is Montevideo, where the leader is the politician Daniel Martínez.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi claim
+It is located in Pennsylvania and it falls under the category of Contributing property.,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi hop
+The prime minister of a country is Adam Fedorowicz and Amdavad ni Gufa is also located in a country.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"A musician is not born in Asunción, Paraguay.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"A person was born in the Ribchester, England in Austria, and died in The Villages, Florida, U.S..",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"A senator, who retired on 3rd March 1857, represented Powell County, Montana, where the largest city is Burlington.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+A book by Diane Duane is published in Hardcover ISBN 978-0-15-204770-2.,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi hop
+"A senator; was born in Noida, India, worked as the secretary of the State of Vermont, and represented Vermont's 3rd Congressional District.",0,6,6,107.0,107.0,1.0,1.0,0,0.0,multi hop
+"Jersey City, New Jersey, United States resident and Cullman, Alabama, U.S. born a politician, is a member of the Parti Pesaka Bumiputera Bersatu.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"A musical artist was born in Paraguay, whose leader is Juan Afara, and he died in Asuncion.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+He represented Vermon and worked as the Secretary of State for Vermont.,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi hop
+Amdavad ni Gufa is located in a country where the leader is not called Jene Vickrey.,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi hop
+A senator representing Vermont's 3rd Congressional District died in Red Fort.,0,9,9,146.0,146.0,1.0,1.0,0,0.0,multi hop
+He was born in Tyrol state in Austria.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"A populated place, which is part of Bundelkhand, is led by Ram Naik and is the location of Agra Airport.",1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi hop
+"I know he was born in Asunción, Paraguay.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+Steven T Seagle and Duncan Rouleau made the character who appeared in Big Hero 6.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"The birth place of an office holder was the Kingdom of Sarawak and his successor was, a president, who was in office while Tuanku Bujang Tuanku Othman was Vice President.",1,10,10,159.0,159.0,0.6666666666666666,0.8,0,0.0,multi hop
+"Located in the United States, the Mason School of Business currently live in the building, a building which cost 75 million dollars.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"A city is 306 above sea level, has a total area of 1.637E8 sq km and a population density of 1239.3 people per sq km.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+The university in the US are currently tenants of the Robert A M Stern designed Alan B Miller Hall.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"The College of William and Mary is the owner of the building, located at 101 Ukrop Way in Varadero, Cuba.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"Virgin Holidays Cruises is located in the country, the leader of this country is Councillor Russell Johnson and one of the languages used is English.",0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi hop
+"She was born in Asuncion, Zomba.",0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,multi hop
+"Vaisey, the Sheriff of Nottingham lives in a country that is not under the chief justice.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"The powering of the ship, which is 5224.78 (millimetres) long, is the ""2xMTU 16V 2000 M60 engine"".",0,2,2,55.0,55.0,1.0,1.0,0,0.0,multi hop
+It is located in the United States and not a contributing property.,0,10,10,159.0,159.0,0.6666666666666666,0.8,0,0.0,multi hop
+"Rolls-Royce Power Systems is the parent company of a company in Mohakhali, Dhaka, whose engine powers the A-Rosa Luna.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+Al-Taqaddum Air Base serves a city in Iraq where Kurdish languages are spoken!,1,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"Agra airport is located in a country, where two of the leaders are Hậu Lý Nam Đế and John Licastro.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,multi hop
+"A person dies in Graz, Brigantine, New Jersey, a country led by Doris Bures.",0,10,10,159.0,159.0,0.6666666666666666,0.8,0,0.0,multi hop
+Alaa Abdul Zahra's position is Forward.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+The Alliant Techsystems manufactured the XM25-CDTE.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+The origin of Reggae is not Rhythm and Blues.,0,10,10,159.0,159.0,0.6666666666666666,0.8,0,0.0,num1
+Reggae's stylistic origin is not ska.,0,10,10,159.0,159.0,0.6666666666666666,0.8,0,0.0,num1
+The name of India is not the dominion of British West Florida.,1,10,10,159.0,159.0,0.5384615384615384,0.7,0,0.0,num1
+"Well, the leader in India is called Sumitra Mahajan.",1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,num1
+AFC Blackpool is actually in the North West Counties Football League.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+When was Enda Kenny a leader of Republic of Ireland?,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+Well 1634 The Galileo Affair is not followed by Niggaz4Life.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+I understand that the leader of Uruguay is Tabare Vazquez.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+The Alan B. Miller Hall was finished on 1st June 2009.,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,num1
+AFC Ajax did not play in the 2008-09 Superleague Greece.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+"Yeah, Alvah Sabin was also a Baptist.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+Well Abdul Taib Mahmud's region is called Balingian.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+"Abel Hernández's birth place is Pando, Uruguay.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+The founder of Springer Science and Business Media is Julius Springer.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+Well John Buscema did not attain the Order of the Redeemer.,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,num1
+It's actually not a variation of Bakewell pudding.,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,num1
+"Well, the voice of Baymax is Scott Adsit.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+Bread crumbs are not a major ingredient in Bakewell tarts.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+"Miri, Malaysia is actually the birth place of Abdul Taib Mahmud!",1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+Stuart Parker plays for the Irlam Town F.C.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+"A Wizard of Mars ISBN number is ""978-0-15-204770-2"".",1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+"Sycamore is also in DeKalb County, Illinois.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+"If only Bakewell pudding was created in 1820 at the Rutland Arms, Bakewell.",0,9,9,146.0,146.0,1.0,1.0,0,0.0,num1
+John Buscema actually did not win the Alley Award!,0,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+Yeah Nikolai Budarin was not a crew member of Apollo 8.,1,10,10,159.0,159.0,0.42857142857142855,0.6,0,0.0,num1
+When was Imagine (John Lennon song) produced by Phil Spector?,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,num1
+It is! The Alan B Miller Hall cost 75 million dollars.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+"103 Colmore Row is located in Colmore Row, Birmingham, England.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,num1
+Did you know that Paul Marchandeau was not a prime Minister?,1,4,4,81.0,81.0,1.0,1.0,0,0.0,existence
+What is the name of Defiance High School's mascot?,0,6,6,107.0,107.0,1.0,1.0,0,0.0,existence
+"Yeah, Petar Zhabov did not go to college.",1,10,10,159.0,159.0,1.0,1.0,0,0.0,existence
+Where was Mohammad Khazaee vice president?,1,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,existence
+What is the name of Blakeley Formation's garrison?,0,3,3,68.0,68.0,1.0,1.0,0,0.0,existence
+What is the name of Ioan Pălăghiță's successor?,0,4,4,81.0,81.0,1.0,1.0,0,0.0,existence
+"Well, 61889 Regiment did not have a garrison.",0,6,6,107.0,107.0,1.0,1.0,0,0.0,existence
+"Nope, Trade Centre Limited did not have a parent company.",1,1,1,42.0,42.0,1.0,1.0,0,0.0,existence
+"Well, Kofi Maxwell Nyarko was a Prime Minister.",0,0,0,29.0,29.0,0.0,1.0,0,0.0,existence
+I wish that Sukarno was a president.,0,10,10,159.0,159.0,0.6666666666666666,0.8,0,0.0,existence
+I know that Marcello Sampson did not attend a university.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,existence
+Kevin Youngblood went to college?,1,9,9,146.0,146.0,1.0,1.0,0,0.0,existence
+When was Calle Kindbom prime minister?,0,1,1,42.0,42.0,1.0,1.0,0,0.0,existence
+I read that Paul Dutton did not have a spouse.,1,6,6,107.0,107.0,1.0,1.0,0,0.0,existence
+I didn’t know that Mobipocket had a parent company.,1,7,7,120.0,120.0,1.0,1.0,0,0.0,existence
+What was Alison Statton vice president?,0,2,2,55.0,55.0,1.0,1.0,0,0.0,existence
+What is the name of WIBISCO's parent company?,0,0,0,29.0,29.0,0.0,1.0,0,0.0,existence
+I heard that Pannonia did not have a capital.,0,9,9,146.0,146.0,1.0,1.0,0,0.0,existence
+Do you know that Roy Trubshaw is not the president?,1,3,3,68.0,68.0,1.0,1.0,0,0.0,existence
+What is the name of Jennifer Plass's award?,0,0,0,29.0,29.0,0.0,1.0,0,0.0,existence
+Rockstar North did not have a parent company back then.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,existence
+Do you know that Danny Philip is not a prime Minister?,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,existence
+I have read that Kris Barlow did not have a youth club.,1,4,4,81.0,81.0,1.0,1.0,0,0.0,existence
+I realized that Hong Yeo was a vice president.,0,1,1,42.0,42.0,1.0,1.0,0,0.0,existence
+Jimmy McHugh served as Vice President.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,existence
+The duchy of Brabant had a capital there.,1,10,10,159.0,159.0,1.0,1.0,0,0.0,existence
+When did Tonderai Chavhanga attend university?,1,10,10,159.0,159.0,1.0,1.0,0,0.0,existence
+Yes Li Xiannian was not the president.,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,existence
+When did Charles Afuakwah attend university?,1,9,9,146.0,146.0,1.0,1.0,0,0.0,existence
+"Well, Iurie Leancă is not a prime minister.",0,10,10,159.0,159.0,0.5384615384615384,0.7,0,0.0,existence
+Adenan Satem graduated from the Winchester School of Art.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+"When was A-Rosa Luna built by Jones, B.?",0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+"Yep, Agustin Barboza's background is #e38181.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+The leader of Birmingham are called the Harri Hiitiö.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+AZAL PFK's full name is Nílton de Oliveira Silva.,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,substitution
+"Oh yes, Karlheinz Kopf is the leader of Germany.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+I know that Acura TLX is assembled in the Lower Saxony.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+"Well, Herb Weaver is India's leader!",0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,substitution
+The Acura TLX has an Oltcit Club  2.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+The Mirosław Chojecki are the leaders of Jewish Motifs International Film Festival.,0,9,9,146.0,146.0,1.0,1.0,0,0.0,substitution
+Duane Swierczynski created the character Ben Urich.,0,6,6,107.0,107.0,1.0,1.0,0,0.0,substitution
+Yes and Abdul Taib Mahmud is from the Eskilstuna region.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+When did Daniel Gould Fowle graduate from the Moorhead State University?,0,10,10,159.0,159.0,0.6666666666666666,0.8,0,0.0,substitution
+A.F.C. Blackpool play in season 2011–12 Football League Championship.,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,substitution
+Bakewell pudding is from the TV series Boogie Woogie.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+It's called The Alan B Miller Hall in Thames Centre.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+"Yes, Darlington has an area code of 48028!",0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+Yes! The leader of the Philippines is called Enrico Giovannini.,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,substitution
+Have you heard of Aaron S. Daggett? He fought in the Operation Hammer in Afghanistan.,0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,substitution
+"Abdul Taib Mahmud lives in Boynton Beach, Florida, U.S..",0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+A Fortress of Grey Ice's ISBN number is 312656742.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+The ICAO Location Identifier of Agra Airport is called YBWG.,0,8,8,133.0,133.0,1.0,1.0,0,0.0,substitution
+"Yes, John Buscema. He won the Order of the Redeemer.",0,10,10,159.0,159.0,0.8181818181818182,0.9,0,0.0,substitution
+William Anders joined NASA in NASA Astronaut Group 18 in 2000.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+"Yes, Polydor Records' distributing label is called RCA Records.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+I read that Montevideo is in the country of Slovenian Territorial Defence.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+When was James Miller (general) a leader of India?,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+Roady (Mousquetaires) is a division of the Honda Co.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+USC Trojans football is the old team of Tee Martin.,0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
+"No, but Bill Everett has won the Heinrich Tessenow Medal.",0,10,10,159.0,159.0,1.0,1.0,0,0.0,substitution
